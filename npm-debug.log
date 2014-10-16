@@ -1,0 +1,219 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/hoangnguyen/Desktop/iny',
+5 verbose install   [ 'body-parser',
+5 verbose install     'cookie-parser',
+5 verbose install     'debug',
+5 verbose install     'express',
+5 verbose install     'hjs',
+5 verbose install     'mongoose',
+5 verbose install     'morgan',
+5 verbose install     'serve-favicon',
+5 verbose install     'mongoose-auto-increment',
+5 verbose install     'limiter' ] ]
+6 info preinstall iny@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping body-parser@~1.8.1 /Users/hoangnguyen/Desktop/iny
+9 verbose already installed skipping cookie-parser@~1.3.3 /Users/hoangnguyen/Desktop/iny
+10 verbose already installed skipping debug@~2.0.0 /Users/hoangnguyen/Desktop/iny
+11 verbose already installed skipping express@~4.9.0 /Users/hoangnguyen/Desktop/iny
+12 verbose already installed skipping hjs@~0.0.6 /Users/hoangnguyen/Desktop/iny
+13 verbose already installed skipping mongoose@^3.8.17 /Users/hoangnguyen/Desktop/iny
+14 verbose already installed skipping morgan@~1.3.0 /Users/hoangnguyen/Desktop/iny
+15 verbose already installed skipping serve-favicon@~2.1.3 /Users/hoangnguyen/Desktop/iny
+16 verbose already installed skipping mongoose-auto-increment@* /Users/hoangnguyen/Desktop/iny
+17 verbose cache add [ 'limiter@*', null ]
+18 verbose cache add name=undefined spec="limiter@*" args=["limiter@*",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'limiter@*',
+19 verbose parsed url   path: 'limiter@*',
+19 verbose parsed url   href: 'limiter@*' }
+20 verbose cache add name="limiter" spec="*" args=["limiter","*"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '*',
+21 verbose parsed url   path: '*',
+21 verbose parsed url   href: '*' }
+22 verbose addNamed [ 'limiter', '*' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile 73f44d34-limiter limiter@*
+25 verbose lock limiter@* /Users/hoangnguyen/.npm/73f44d34-limiter.lock
+26 silly addNameRange { name: 'limiter', range: '*', hasData: false }
+27 verbose request where is /limiter
+28 verbose request registry https://registry.npmjs.org/
+29 verbose request id 986c38a44ef52b38
+30 verbose url raw /limiter
+31 verbose url resolving [ 'https://registry.npmjs.org/', './limiter' ]
+32 verbose url resolved https://registry.npmjs.org/limiter
+33 verbose request where is https://registry.npmjs.org/limiter
+34 info trying registry request attempt 1 at 21:46:49
+35 http GET https://registry.npmjs.org/limiter
+36 http 200 https://registry.npmjs.org/limiter
+37 silly registry.get cb [ 200,
+37 silly registry.get   { date: 'Tue, 14 Oct 2014 19:46:50 GMT',
+37 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly registry.get     etag: '"5FTINOBODQGUDEUVNASXE4NZZ"',
+37 silly registry.get     'content-type': 'application/json',
+37 silly registry.get     'cache-control': 'max-age=60',
+37 silly registry.get     'content-length': '13492',
+37 silly registry.get     'accept-ranges': 'bytes',
+37 silly registry.get     via: '1.1 varnish',
+37 silly registry.get     age: '0',
+37 silly registry.get     'x-served-by': 'cache-lcy1130-LCY',
+37 silly registry.get     'x-cache': 'MISS',
+37 silly registry.get     'x-cache-hits': '0',
+37 silly registry.get     'x-timer': 'S1413316010.361707,VS0,VE155',
+37 silly registry.get     vary: 'Accept',
+37 silly registry.get     'keep-alive': 'timeout=10, max=50',
+37 silly registry.get     connection: 'Keep-Alive' } ]
+38 silly addNameRange number 2 { name: 'limiter', range: '*', hasData: true }
+39 silly addNameRange versions [ 'limiter',
+39 silly addNameRange   [ '0.0.2', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+40 verbose addNamed [ 'limiter', '1.0.5' ]
+41 verbose addNamed [ '1.0.5', '1.0.5' ]
+42 silly lockFile d697c64f-limiter-1-0-5 limiter@1.0.5
+43 verbose lock limiter@1.0.5 /Users/hoangnguyen/.npm/d697c64f-limiter-1-0-5.lock
+44 silly lockFile c2b3dbd4-js-org-limiter-limiter-1-0-5-tgz https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+45 verbose lock https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz /Users/hoangnguyen/.npm/c2b3dbd4-js-org-limiter-limiter-1-0-5-tgz.lock
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz',
+46 verbose addRemoteTarball   '9630b2a0d3bad63203f96e3d96f32f83d442dfc8' ]
+47 info retry fetch attempt 1 at 21:46:50
+48 verbose fetch to= /var/folders/hb/7_tmj8zn48j6h0w4dbrl3jqm0000gp/T/npm-23907-jsHZqU0e/registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+49 http GET https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+50 http 200 https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+51 silly lockFile c2b3dbd4-js-org-limiter-limiter-1-0-5-tgz https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+52 silly lockFile c2b3dbd4-js-org-limiter-limiter-1-0-5-tgz https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz
+53 silly lockFile d697c64f-limiter-1-0-5 limiter@1.0.5
+54 silly lockFile d697c64f-limiter-1-0-5 limiter@1.0.5
+55 silly lockFile 73f44d34-limiter limiter@*
+56 silly lockFile 73f44d34-limiter limiter@*
+57 silly resolved [ { name: 'limiter',
+57 silly resolved     description: 'A generic rate limiter for node.js. Useful for API clients, web crawling, or other tasks that need to be throttled',
+57 silly resolved     version: '1.0.5',
+57 silly resolved     author: { name: 'John Hurliman', email: 'jhurliman@cull.tv' },
+57 silly resolved     dependencies: {},
+57 silly resolved     devDependencies: { assert: '0.4.9', vows: '0.6.3' },
+57 silly resolved     keywords: [ 'rate', 'limiting', 'throttling' ],
+57 silly resolved     repository:
+57 silly resolved      { type: 'git',
+57 silly resolved        url: 'git://github.com/jhurliman/node-rate-limiter' },
+57 silly resolved     bugs: { url: 'http://github.com/jhurliman/node-rate-limiter/issues' },
+57 silly resolved     directories: { lib: './lib/' },
+57 silly resolved     main: './index.js',
+57 silly resolved     licenses: [ [Object] ],
+57 silly resolved     _id: 'limiter@1.0.5',
+57 silly resolved     dist:
+57 silly resolved      { shasum: '9630b2a0d3bad63203f96e3d96f32f83d442dfc8',
+57 silly resolved        tarball: 'http://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz' },
+57 silly resolved     _from: 'limiter@*',
+57 silly resolved     _npmVersion: '1.3.2',
+57 silly resolved     _npmUser: { name: 'jhurliman', email: 'jhurliman@jhurliman.org' },
+57 silly resolved     maintainers: [ [Object] ],
+57 silly resolved     _shasum: '9630b2a0d3bad63203f96e3d96f32f83d442dfc8',
+57 silly resolved     _resolved: 'https://registry.npmjs.org/limiter/-/limiter-1.0.5.tgz' } ]
+58 info install limiter@1.0.5 into /Users/hoangnguyen/Desktop/iny
+59 info installOne limiter@1.0.5
+60 verbose node_modules/limiter unbuild
+61 verbose tar unpack /Users/hoangnguyen/.npm/limiter/1.0.5/package.tgz
+62 silly lockFile a3c8e2c1-Desktop-iny-node-modules-limiter tar:///Users/hoangnguyen/Desktop/iny/node_modules/limiter
+63 verbose lock tar:///Users/hoangnguyen/Desktop/iny/node_modules/limiter /Users/hoangnguyen/.npm/a3c8e2c1-Desktop-iny-node-modules-limiter.lock
+64 silly lockFile 0910005d-en-npm-limiter-1-0-5-package-tgz tar:///Users/hoangnguyen/.npm/limiter/1.0.5/package.tgz
+65 verbose lock tar:///Users/hoangnguyen/.npm/limiter/1.0.5/package.tgz /Users/hoangnguyen/.npm/0910005d-en-npm-limiter-1-0-5-package-tgz.lock
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 silly gunzTarPerm extractEntry package.json
+68 silly gunzTarPerm extractEntry .npmignore
+69 silly gunzTarPerm extractEntry README.md
+70 silly gunzTarPerm extractEntry index.js
+71 silly gunzTarPerm extractEntry LICENSE.txt
+72 silly gunzTarPerm extractEntry lib/rateLimiter.js
+73 silly gunzTarPerm extractEntry lib/tokenBucket.js
+74 silly gunzTarPerm extractEntry tests/tokenbucket-tests.js
+75 silly lockFile a3c8e2c1-Desktop-iny-node-modules-limiter tar:///Users/hoangnguyen/Desktop/iny/node_modules/limiter
+76 silly lockFile a3c8e2c1-Desktop-iny-node-modules-limiter tar:///Users/hoangnguyen/Desktop/iny/node_modules/limiter
+77 silly lockFile 0910005d-en-npm-limiter-1-0-5-package-tgz tar:///Users/hoangnguyen/.npm/limiter/1.0.5/package.tgz
+78 silly lockFile 0910005d-en-npm-limiter-1-0-5-package-tgz tar:///Users/hoangnguyen/.npm/limiter/1.0.5/package.tgz
+79 info preinstall limiter@1.0.5
+80 verbose readDependencies using package.json deps
+81 verbose readDependencies using package.json deps
+82 silly resolved []
+83 verbose about to build /Users/hoangnguyen/Desktop/iny/node_modules/limiter
+84 info build /Users/hoangnguyen/Desktop/iny/node_modules/limiter
+85 verbose linkStuff [ false,
+85 verbose linkStuff   false,
+85 verbose linkStuff   false,
+85 verbose linkStuff   '/Users/hoangnguyen/Desktop/iny/node_modules' ]
+86 info linkStuff limiter@1.0.5
+87 verbose linkBins limiter@1.0.5
+88 verbose linkMans limiter@1.0.5
+89 verbose rebuildBundles limiter@1.0.5
+90 info install limiter@1.0.5
+91 info postinstall limiter@1.0.5
+92 info build /Users/hoangnguyen/Desktop/iny
+93 verbose linkStuff [ false, false, false, '/Users/hoangnguyen/Desktop' ]
+94 info linkStuff iny@0.0.0
+95 verbose linkBins iny@0.0.0
+96 verbose linkMans iny@0.0.0
+97 verbose rebuildBundles iny@0.0.0
+98 verbose rebuildBundles [ '.bin',
+98 verbose rebuildBundles   '.gitignore',
+98 verbose rebuildBundles   'body-parser',
+98 verbose rebuildBundles   'cookie-parser',
+98 verbose rebuildBundles   'debug',
+98 verbose rebuildBundles   'express',
+98 verbose rebuildBundles   'hjs',
+98 verbose rebuildBundles   'limiter',
+98 verbose rebuildBundles   'mongoose',
+98 verbose rebuildBundles   'mongoose-auto-increment',
+98 verbose rebuildBundles   'morgan',
+98 verbose rebuildBundles   'nodemon',
+98 verbose rebuildBundles   'serve-favicon' ]
+99 verbose rebuild bundle /Users/hoangnguyen/Desktop/iny/node_modules/nodemon
+100 info build /Users/hoangnguyen/Desktop/iny/node_modules/nodemon
+101 info preinstall nodemon@1.2.1
+102 verbose linkStuff [ false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   '/Users/hoangnguyen/Desktop/iny/node_modules' ]
+103 info linkStuff nodemon@1.2.1
+104 warn prefer global nodemon@1.2.1 should be installed with -g
+105 verbose linkBins nodemon@1.2.1
+106 verbose link bins [ { nodemon: './bin/nodemon.js' },
+106 verbose link bins   '/Users/hoangnguyen/Desktop/iny/node_modules/.bin',
+106 verbose link bins   false ]
+107 verbose linkMans nodemon@1.2.1
+108 verbose rebuildBundles nodemon@1.2.1
+109 verbose rebuildBundles [ 'minimatch', 'ps-tree', 'update-notifier' ]
+110 error Error: EACCES, unlink '/Users/hoangnguyen/Desktop/iny/node_modules/.bin/nodemon'
+110 error  { [Error: EACCES, unlink '/Users/hoangnguyen/Desktop/iny/node_modules/.bin/nodemon']
+110 error   errno: 3,
+110 error   code: 'EACCES',
+110 error   path: '/Users/hoangnguyen/Desktop/iny/node_modules/.bin/nodemon' }
+111 error Please try running this command again as root/Administrator.
+112 error System Darwin 13.3.0
+113 error command "node" "/usr/local/bin/npm" "install"
+114 error cwd /Users/hoangnguyen/Desktop/iny
+115 error node -v v0.10.32
+116 error npm -v 1.4.28
+117 error path /Users/hoangnguyen/Desktop/iny/node_modules/.bin/nodemon
+118 error code EACCES
+119 error errno 3
+120 error stack Error: EACCES, unlink '/Users/hoangnguyen/Desktop/iny/node_modules/.bin/nodemon'
+121 verbose exit [ 3, true ]

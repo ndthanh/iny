@@ -7,6 +7,7 @@ var wishesSchema = new Schema({
 	,content: {type: String, require: true}
 	,user: {type: String, default: "Anonymous"}
 	,created: {type: Date, default: Date.now}
+	,background: {type: String, default: "#000000"} // url("blah.png") or #123456
 });
 
 // wishesSchema.plugin(autoInc.plugin, {model: 'Wishes', field: 'wishId'});
