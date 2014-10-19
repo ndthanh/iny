@@ -4,6 +4,7 @@ var mongoose = require('mongoose'),
 
 var wishesSchema = new Schema({
 	wishId: {type: Number, unique: true}
+	,title: {type: String, require: true}
 	,content: {type: String, require: true}
 	,user: {type: String, default: "Anonymous"}
 	,created: {type: Date, default: Date.now}

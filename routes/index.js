@@ -15,21 +15,22 @@
  * Find and retrieves all wishes
  */
 
- // findAllWishes = function (req, res) {
- // 	console.log("GET - /wishes");
- // 	return wishes.find(function (err, wishes) {
- // 		if(!err){
- // 			return res.send(wishes);
- // 		} else {
- // 			res.statusCode = 500;
- // 			console.log('Internal error(%d): %s', res.statusCode, err.message);
- // 			return res.send({ error: 'Server error'});
- // 		}
- // 	});
- // };
+ findAllWishes = function (req, res) {
+ 	console.log("GET - /wishes");
+ 	return wishes.find(function (err, wishes) {
+ 		if(!err){
+ 			return res.send(wishes);
+ 		} else {
+ 			res.statusCode = 500;
+ 			console.log('Internal error(%d): %s', res.statusCode, err.message);
+ 			return res.send({ error: 'Server error'});
+ 		}
+ 	});
+ };
 
  home = function (req, res) {
- 	res.send('ok');	
+ 	// res.send('ok');	
+    res.render("index");
  };
 
 /**
@@ -70,6 +71,7 @@
         }
         else {
         	var wish = new wishes({
+                title: req.body.title,
         		content: req.body.content,
         		user: req.body.user,
         		background: req.body.background

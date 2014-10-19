@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <p>{{ wish.content}}</p> from
-    <p>{{ wish.user }}</p>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Diwali Message</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+	<link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/theme2.css">
+	<link rel="stylesheet" href="css/themes.css">
+	<script src="js/modernizr.js"></script>
+	<style type="text/css"></style>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type='text/javascript'>
+	$(function(){
+		var overlay = $('<div id="overlay"></div>');
+		$('.close').click(function(){
+			$('.popup').hide();
+			overlay.appendTo(document.body).remove();
+			return false;
+		});
+
+		$('.x').click(function(){
+			$('.popup').hide();
+			overlay.appendTo(document.body).remove();
+			return false;
+		});
+
+		$('.click').click(function(){
+			overlay.show();
+			overlay.appendTo(document.body);
+			$('.popup').show();
+			return false;
+		});
+
+
+		$("#submit").on("click",function(e) {
+		    e.preventDefault(); // cancel the link itself
+		    $.post(this.href,
+		    {
+		    	title: $("#title").val(),
+		    	content: $("#message").val(),
+		    	user: $("#email").val(),
+		    	background: $("#color").val(),
+		    },
+		     function(data) {
+		      // $("#someContainer").html(data);
+		      console.log(data.wish.background);
+		      $("#content").html(data.wish.content + '<br/>******* <span id="sign"></span> *******');
+			  $("#sign").html(data.wish.user);
+		      // $("body").css("background-color", data.wish.background + " !important");
+		      $("#main").css("background-color", data.wish.background);
+		      // $("#overlay").css("background-color", data.wish.background);
+		      console.log($("#main").css("background-color", data.wish.background));
+		    });
+		});
+
+	});
+	</script>
+
+</head>
+
+<body class="navbar navbar-inverse">
+	<div class="main_content" id="main">
+
+		<div class="wrapper" id="wrapper">
+
+			<div class="header">            
+				<img src="image/happy-diwali-clipart.png" alt="#"/>                         
+			</div>
+			<div class="header_content">            
+				<p id="content">MAKE YOUR LIFE JOYFUL NEVER LOSE HOPE<br/>                    
+					ALWAYS BE HAPPY WITH YOUR FAMILY<br/>
+					MAKE YOUR ENEMY ALSO A GOOD FRIEND<br/>
+					GET A BLESS FROM GOD AND ELDER<br/>
+					******* HAPPY + DIWALI *******
+				</p>            
+			</div>
+
+			<div class="author_type">
+
+				<label>By(9spl Team):</label>
+				<div class="logo">
+					<img src="image/9spl_logo.png" alt="#"/>
+				</div>
+
+			</div>
+
+
+			<div class="social_media">            
+				<p class='follow'>Share</p>
+				<ul data-social-icons>
+					<li data-social-icon='facebook'></li>
+					<li data-social-icon='twitter'></li>
+					<li data-social-icon='gplus'></li>
+				</ul>            
+			</div>
+
+			<div class="button">
+				<input type="submit"  class='click' value="Create Your Own"/>
+			</div>
+
+			<div class='popup'>
+				<div class='content'>
+					<img src='image/x.png' alt='quit' class='x' id='x' title="close" />
+
+					<div class="services_right_main">
+						<div class="services_right">
+							<h1>Create Your Own Here</h1>    
+						</div>
+
+
+						<div class="inputbox">
+							<span>Write Your Title Here:</span>
+							<input name="" value=""  type="text" placeholder="Happy Diwali" id="title" />
+						</div>
+						<div class="inputbox">
+							<span>Write Your Diwali Message Here:</span>
+							<textarea name="" cols="" rows=""  style="height:100px;" placeholder="Message" id = "message"></textarea> 
+						</div>
+						<div class="inputbox">
+							<span>From:</span>
+							<input name="" value="" type="text" placeholder="Email" id="email"/>
+						</div>
+						<div class="inputbox">
+							<span>Select background color</span>
+							<input name="" value=""  type="text" placeholder="Color" id="color"/>
+						</div>
+
+						<div class="submit_btn">
+							<a href="">Preview</a>
+
+						</div>
+						<div class="submit_btn">
+							<a href="/" id="submit">Submit</a>
+
+						</div>
+					</div>
+
+					<!--<a href='' class='close'>Close</a>-->
+				</p>
+			</div>
+		</div>         
+
+
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="header-nav-section" class="col-sm-4 col-xs-12 clearfix">
+	<!-- Header Nav -->
+	<ul class="navbar-nav-custom pull-right" style="right:0; position:fixed; top:150px;">
+		<!-- Theme Options, functionality initialized at main.js - templateOptions() -->
+		<li class="dropdown dropdown-theme-options">
+			<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><img src="image/side_arrow.jpg" alt="#"/></a>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<!-- Page Options -->
+
+				<li class="divider"></li>
+
+				<!-- Color Themes -->
+				<li>
+					<ul class="theme-colors clearfix">
+						<li class="active">
+							<a href="javascript:void(0)" class="img-circle themed-background-default themed-border-default" data-theme="default" data-toggle="tooltip" title="Default"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-amethyst themed-border-amethyst" data-theme="css/themes/amethyst.css" data-toggle="tooltip" title="Amethyst"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-army themed-border-army" data-theme="css/themes/army.css" data-toggle="tooltip" title="Army"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-asphalt themed-border-asphalt" data-theme="css/themes/asphalt.css" data-toggle="tooltip" title="Asphalt"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-autumn themed-border-autumn" data-theme="css/themes/autumn.css" data-toggle="tooltip" title="Autumn"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-cherry themed-border-cherry" data-theme="css/themes/cherry.css" data-toggle="tooltip" title="Cherry"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-city themed-border-city" data-theme="css/themes/city.css" data-toggle="tooltip" title="City"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-dawn themed-border-dawn" data-theme="css/themes/dawn.css" data-toggle="tooltip" title="Dawn"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-deepsea themed-border-deepsea" data-theme="css/themes/deepsea.css" data-toggle="tooltip" title="Deepsea"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-diamond themed-border-diamond" data-theme="css/themes/diamond.css" data-toggle="tooltip" title="Diamond"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-fire themed-border-fire" data-theme="css/themes/fire.css" data-toggle="tooltip" title="Fire"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-grass themed-border-grass" data-theme="css/themes/grass.css" data-toggle="tooltip" title="Grass"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-leaf themed-border-leaf" data-theme="css/themes/leaf.css" data-toggle="tooltip" title="Leaf"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-night themed-border-night" data-theme="css/themes/night.css" data-toggle="tooltip" title="Night"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-ocean themed-border-ocean" data-theme="css/themes/ocean.css" data-toggle="tooltip" title="Ocean"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-oil themed-border-oil" data-theme="css/themes/oil.css" data-toggle="tooltip" title="Oil"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-stone themed-border-stone" data-theme="css/themes/stone.css" data-toggle="tooltip" title="Stone"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-sun themed-border-sun" data-theme="css/themes/sun.css" data-toggle="tooltip" title="Sun"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-tulip themed-border-tulip" data-theme="css/themes/tulip.css" data-toggle="tooltip" title="Tulip"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="img-circle themed-background-wood themed-border-wood" data-theme="css/themes/wood.css" data-toggle="tooltip" title="Wood"></a>
+						</li>
+					</ul>
+				</li>
+				<!-- END Color Themes -->
+			</ul>
+		</li>
+		<!-- END Theme Options -->
+
+		<!-- Divider -->
+		<li class="divider-vertical"></li>
+
+		<!-- Notifications -->
+
+		<!-- END Notifications -->
+
+		<!-- Messages -->
+
+		<!-- END Messages -->
+	</ul>
+	<!-- END Header Nav -->
+
+	<!-- Mobile Navigation, Shows up on tables and mobiles -->
+
+	<!-- END Mobile Navigation, Shows up on tables and on mobiles -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+<!--<script src="js/social_media.js"></script>-->
+<script src="js/index.js"></script>
+</body>
 </html>

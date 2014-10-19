@@ -1,0 +1,281 @@
+* {margin:0px; padding:0px;}
+/*html, body {height:100%;}*/
+body {font-size:13px; color:#4f4f4f; font-family:Arial, Helvetica, sans-serif; font-weight:400; /*background:#fff;*/ background:#000 !important;
+    margin: 0px;
+    /*overflow: hidden;*/}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, label, form{display:block}
+img {border:none; margin:0; padding:0;}
+.clr {clear:both;}
+.clr10 {clear:both; height:10px; width:100%;}
+.clr5 {clear:both; height:5px; width:100%;}
+.clr15 {clear:both; height:15px; width:100%;}
+.clr20 {clear:both; height:20px; width:100%;}
+.ClrNon {display:block;}
+a {text-decoration:none;}
+:focus {outline:none;}
+ul li {list-style:none;}
+input:focus {outline:none;}
+textarea:focus {outline:none;}
+ul{margin:0; padding:0;}
+
+
+/*  ----- Main Css start  -------- */
+
+
+/*body{background:url(image/body_bg.jpg) center no-repeat;
+}*/
+
+.main_content{width:100%;
+float:left;
+position:absolute;
+
+}
+.wrapper{max-width:1200px;
+width:100%;
+margin:0 auto;
+}
+.header{text-align:center;
+margin: 15px 0;
+}
+.header_content{text-align:center;
+padding:10px 0;
+}
+.header_content p{line-height:30px;
+font-size:16px;
+color:#fff;
+}
+.author_type{text-align:center;
+margin-top:30px;
+}
+.logo{margin:10px auto;
+/*background:#fff;*/
+padding:10px;
+
+width:20%;
+color:#fff;
+}
+label { color:#fff; }
+
+.social_media{
+	float:right;
+position:fixed;
+top:75px;
+right:-85px;
+color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200);
+* {
+  transition: all 300ms ease-out;
+  font-family: 'Raleway';
+}
+[data-social-icons] {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 625px;
+  /*left: 50%;*/
+  left: 35%;
+  margin-left: -313px;
+  /*top: 50%;*/
+  margin-top: 35px;
+}
+[data-social-icons] li {
+  line-height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 100;
+  color: #ffffff;
+  float: left;
+  margin-right: 5px;
+}
+[data-social-icons] li:last-child {
+  margin-right: 0;
+}
+[data-social-icons]:hover [data-social-icon] {
+  background-color: gray;
+  opacity: .7;
+}
+[data-social-icons] [data-social-icon]:hover {
+  cursor: pointer;
+  animation-name: hover-anim;
+  animation-duration: 100ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 2;
+}
+[data-social-icons] [data-social-icon~=facebook],
+[data-social-icons] [data-social-icon~=facebook]:hover {
+  background-color: #43609c;
+  opacity: 1;
+}
+[data-social-icons] [data-social-icon~=facebook]:before,
+[data-social-icons] [data-social-icon~=facebook]:hover:before {
+  content: "F";
+}
+[data-social-icons] [data-social-icon~=twitter],
+[data-social-icons] [data-social-icon~=twitter]:hover {
+  background-color: #53a7e7;
+  opacity: 1;
+}
+[data-social-icons] [data-social-icon~=twitter]:before,
+[data-social-icons] [data-social-icon~=twitter]:hover:before {
+  content: "T";
+}
+[data-social-icons] [data-social-icon~=gplus],
+[data-social-icons] [data-social-icon~=gplus]:hover {
+  background-color: #d95232;
+  opacity: 1;
+}
+[data-social-icons] [data-social-icon~=gplus]:before,
+[data-social-icons] [data-social-icon~=gplus]:hover:before {
+  content: "G";
+}
+[data-social-icons] [data-social-icon~=linkedin],
+[data-social-icons] [data-social-icon~=linkedin]:hover {
+  background-color: #0274b3;
+  opacity: 1;
+}
+[data-social-icons] [data-social-icon~=linkedin]:before,
+[data-social-icons] [data-social-icon~=linkedin]:hover:before {
+  content: "L";
+}
+[data-social-icons] [data-social-icon~=youtube],
+[data-social-icons] [data-social-icon~=youtube]:hover {
+  background-color: #ec282a;
+  opacity: 1;
+}
+[data-social-icons] [data-social-icon~=youtube]:before,
+[data-social-icons] [data-social-icon~=youtube]:hover:before {
+  content: "Y";
+}
+@keyframes hover-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.follow {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 625px;
+  /*left: 50%;*/
+  left: 35%;
+  margin-left: -313px;
+  /*top: 50%;
+  margin-top: -90px;*/
+  font-size: 25px;
+  font-weight: 100;
+}
+.follow.facebook:after {
+  content: ' on Facebook';
+}
+.follow.twitter:after {
+  content: ' on Twitter';
+}
+.follow.gplus:after {
+  content: ' on Google+';
+}
+.follow.linkedin:after {
+  content: ' on LinkedIn';
+}
+.follow.youtube:after {
+  content: ' on YouTube';
+}
+
+
+
+
+
+
+
+
+
+
+.button{float:right;
+position:fixed;
+top:30px;
+right:75px;
+}
+.button input{width:150px;
+height:40px;
+background:#f0b023;
+border:none;
+color:#fff;
+font-size:16px;
+
+cursor:pointer;
+}
+.button input:hover{
+background:#067aba;
+}
+
+.services_right_main {
+	width:98%;
+	float: left;
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+}
+.services_right {
+	width:100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.services_right h1 {
+	font-size:24px;
+	color: #27a3c9;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.inputbox {
+	width: 330px;
+	float: left;
+	margin-top:5px;
+}
+.inputbox span {
+	width: 100%;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 6px 0px
+}
+.inputbox input, textarea, select {
+	width:98%;
+	float: left;
+	border: 1px solid #d1d1d1;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin: 0px;
+	background: #fff;
+	padding-left: 5px;
+}
+.submit_btn a{
+	width: auto;
+	float: left;
+	padding:5px 10px;
+	color:#fff;
+	font-size:15px;
+	margin:15px 10px 0px 0px;
+	background:#ff0000;
+}
+.submit_btn a:hover{
+	color:#ff0000;
+	background:#eee;
+}

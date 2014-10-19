@@ -1,0 +1,169 @@
+@media only screen and (min-width:768px) and (max-width:999px){
+	
+.follow {
+left: 45%;
+}
+[data-social-icons] {
+left: 45%;
+}
+
+
+}
+
+
+@media only screen and (min-width:480px) and (max-width:767px){
+	
+	
+.follow {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+width: 136px;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 169px;
+font-size: 25px;
+font-weight: 100;
+}
+[data-social-icons] {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+top: 0;
+margin-top:0;
+width: 150px;
+float: left;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 169px;
+/* top: 50%; */
+/* margin-top: 35px; */
+}
+.button {
+float: none;
+position: relative;
+top: 30px;
+right: 0;
+text-align: center;
+}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:479px){
+	
+	
+	
+
+.header img{width:100%;
+}
+.follow {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+width: 136px;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 80px;
+font-size: 25px;
+font-weight: 100;
+}
+[data-social-icons] {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+top: 0;
+margin-top:0;
+width: 150px;
+float: left;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 80px;
+/* top: 50%; */
+/* margin-top: 35px; */
+}
+.button {
+float: none;
+position: relative;
+top: 30px;
+right: 0;
+text-align: center;
+}
+	
+	
+	
+}
+
+
+
+
+@media only screen and (min-width:380px) and (max-width:479px){
+	
+	
+	
+
+.header img{width:100%;
+}
+.follow {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+width: 136px;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 188px;
+font-size: 25px;
+font-weight: 100;
+}
+[data-social-icons] {
+position: relative;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 0;
+left: 0;
+top: 0;
+margin-top:0;
+width: 150px;
+float: left;
+/* width: 625px; */
+/* left: 50%; */
+/* left: 75%; */
+margin-left: 188px;
+/* top: 50%; */
+/* margin-top: 35px; */
+}
+
+
+
+
+}
